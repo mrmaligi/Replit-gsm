@@ -1,0 +1,252 @@
+
+
+added 1 package, and audited 1007 packages in 4s
+
+102 packages are looking for funding
+  run `npm fund` for details
+
+4 low severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+
+› Added config plugin: expo-secure-store
+~/workspace$ 
+~/workspace$ npx expo install expo-clipboard
+› Installing 1 SDK 52.0.0 compatible native module using npm
+> npm install
+
+up to date, audited 1007 packages in 3s
+
+102 packages are looking for funding
+  run `npm fund` for details
+
+4 low severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+~/workspace$ expo start
+WARNING: The legacy expo-cli does not support Node +17. Migrate to the new local Expo CLI: https://blog.expo.dev/the-new-expo-cli-f4250d8e3421.
+┌───────────────────────────────────────────────────────────────────────────┐
+│                                                                           │
+│   The global expo-cli package has been deprecated.                        │
+│                                                                           │
+│   The new Expo CLI is now bundled in your project in the expo package.    │
+│   Learn more: https://blog.expo.dev/the-new-expo-cli-f4250d8e3421.        │
+│                                                                           │
+│   To use the local CLI instead (recommended in SDK 46 and higher), run:   │
+│   › npx expo <command>                                                    │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+Starting project at /home/runner/workspace
+Some dependencies are incompatible with the installed expo package version:
+ - @react-native-async-storage/async-storage - expected version: 1.23.1 - actual version installed: 1.24.0
+ - expo-constants - expected version: ~17.0.8 - actual version installed: 17.0.5
+ - expo-font - expected version: ~13.0.4 - actual version installed: 13.0.3
+ - expo-router - expected version: ~4.0.18 - actual version installed: 4.0.17
+ - expo-splash-screen - expected version: ~0.29.22 - actual version installed: 0.29.21
+ - react-native-gesture-handler - expected version: ~2.20.2 - actual version installed: 2.23.1
+ - react-native-screens - expected version: ~4.4.0 - actual version installed: 4.6.0
+ - react-native-svg - expected version: 15.8.0 - actual version installed: 15.11.1
+Your project may not work correctly until you install the correct versions of the packages.
+To install the correct versions of these packages, please run: expo doctor --fix-dependencies,
+or install individual packages by running expo install [package-name ...]
+ExpoMetroConfig.loadAsync is not a function
+TypeError: ExpoMetroConfig.loadAsync is not a function
+    at runMetroDevServerAsync (/home/runner/workspace/.config/npm/node_global/lib/node_modules/expo-cli/node_modules/@expo/dev-server/src/MetroDevServer.ts:86:45)
+    at startDevServerAsync (/home/runner/workspace/.config/npm/node_global/lib/node_modules/expo-cli/node_modules/xdl/src/start/startDevServerAsync.ts:75:77)
+    at startAsync (/home/runner/workspace/.config/npm/node_global/lib/node_modules/expo-cli/node_modules/xdl/src/start/startAsync.ts:84:41)
+~/workspace$ expo start
+WARNING: The legacy expo-cli does not support Node +17. Migrate to the new local Expo CLI: https://blog.expo.dev/the-new-expo-cli-f4250d8e3421.
+┌───────────────────────────────────────────────────────────────────────────┐
+│                                                                           │
+│   The global expo-cli package has been deprecated.                        │
+│                                                                           │
+│   The new Expo CLI is now bundled in your project in the expo package.    │
+│   Learn more: https://blog.expo.dev/the-new-expo-cli-f4250d8e3421.        │
+│                                                                           │
+│   To use the local CLI instead (recommended in SDK 46 and higher), run:   │
+│   › npx expo <command>                                                    │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+Starting project at /home/runner/workspace
+Some dependencies are incompatible with the installed expo package version:
+ - @react-native-async-storage/async-storage - expected version: 1.23.1 - actual version installed: 1.24.0
+ - expo-constants - expected version: ~17.0.8 - actual version installed: 17.0.5
+ - expo-font - expected version: ~13.0.4 - actual version installed: 13.0.3
+ - expo-router - expected version: ~4.0.18 - actual version installed: 4.0.17
+ - expo-splash-screen - expected version: ~0.29.22 - actual version installed: 0.29.21
+ - react-native-gesture-handler - expected version: ~2.20.2 - actual version installed: 2.23.1
+ - react-native-screens - expected version: ~4.4.0 - actual version installed: 4.6.0
+ - react-native-svg - expected version: 15.8.0 - actual version installed: 15.11.1
+Your project may not work correctly until you install the correct versions of the packages.
+To install the correct versions of these packages, please run: expo doctor --fix-dependencies,
+or install individual packages by running expo install [package-name ...]
+ExpoMetroConfig.loadAsync is not a function
+TypeError: ExpoMetroConfig.loadAsync is not a function
+    at runMetroDevServerAsync (/home/runner/workspace/.config/npm/node_global/lib/node_modules/expo-cli/node_modules/@expo/dev-server/src/MetroDevServer.ts:86:45)
+    at startDevServerAsync (/home/runner/workspace/.config/npm/node_global/lib/node_modules/expo-cli/node_modules/xdl/src/start/startDevServerAsync.ts:75:77)
+    at startAsync (/home/runner/workspace/.config/npm/node_global/lib/node_modules/expo-cli/node_modules/xdl/src/start/startAsync.ts:84:41)
+ Environment updated. Reloading shell...
+~/workspace$ npx expo prebuild
+✔ Created native directories | reusing /android, /ios
+› Using current versions instead of recommended expo@~52.0.38.
+✔ Updated package.json | no changes
+✔ Finished prebuild
+~/workspace$  npx eas build:configure
+bash:  npx: command not found
+~/workspace$ npx eas build:configure
+npm error could not determine executable to run
+npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2025-03-12T05_18_48_436Z-debug-0.log
+~/workspace$ ^C
+~/workspace$ node -v
+npm -v
+v20.18.1
+10.8.2
+~/workspace$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 16555  100 16555    0     0   341k      0 --:--:-- --:--:-- --:--:--  343k
+=> Downloading nvm from git to '/home/runner/workspace/.config/nvm'
+=> Cloning into '/home/runner/workspace/.config/nvm'...
+remote: Enumerating objects: 382, done.
+remote: Counting objects: 100% (382/382), done.
+remote: Compressing objects: 100% (325/325), done.
+remote: Total 382 (delta 43), reused 180 (delta 29), pack-reused 0 (from 0)
+Receiving objects: 100% (382/382), 386.80 KiB | 4.55 MiB/s, done.
+Resolving deltas: 100% (43/43), done.
+* (HEAD detached at FETCH_HEAD)
+  master
+=> Compressing and cleaning up git repository
+
+=> Appending nvm source string to /home/runner/.bashrc
+main: line 448: /home/runner/.bashrc: Permission denied
+=> Appending bash_completion source string to /home/runner/.bashrc
+main: line 455: /home/runner/.bashrc: Permission denied
+=> You currently have modules installed globally with `npm`. These will no
+=> longer be linked to the active version of Node when you install a new node
+=> with `nvm`; and they may (depending on how you construct your `$PATH`)
+=> override the binaries of modules installed with `nvm`:
+
+/home/runner/workspace/.config/npm/node_global/lib
+└── expo-cli@6.3.12
+=> If you wish to uninstall them at a later point (or re-install them under your
+=> `nvm` Nodes), you can remove them from the system Node as follows:
+
+     $ nvm use system
+     $ npm uninstall -g a_module
+
+=> Close and reopen your terminal to start using nvm or run the following to use it now:
+
+export NVM_DIR="$HOME/workspace/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+~/workspace$ nvm install --lts
+Version '--lts' not found - try `nvm ls-remote` to browse available versions.
+~/workspace$ npx eas build:configure
+npm error could not determine executable to run
+npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2025-03-12T05_20_48_117Z-debug-0.log
+~/workspace$ npm cache clean --force
+npm warn using --force Recommended protections disabled.
+~/workspace$ npm install eas-cli
+npm warn deprecated lodash.get@4.4.2: This package is deprecated. Use the optional chaining (?.) operator instead.
+npm warn deprecated @oclif/screen@3.0.8: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated rimraf@2.4.5: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@6.0.4: Glob versions prior to v9 are no longer supported
+npm warn deprecated sudo-prompt@9.1.1: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+
+added 246 packages, and audited 1253 packages in 24s
+
+113 packages are looking for funding
+  run `npm fund` for details
+
+4 low severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+~/workspace$ npx eas build:configure
+An Expo user account is required to proceed.
+
+Log in to EAS with email or username (exit and run eas login --help to see other login options)
+✔ Email or username … manikaranuu@gmail.comndefinedndefined
+✔ Password … *************************
+Your username, email, or password was incorrect.
+    Error: build:configure command failed.
+~/workspace$ npx eas build:configure
+An Expo user account is required to proceed.
+
+Log in to EAS with email or username (exit and run eas login --help to see other login options)
+✔ Email or username … ndefinedndefined
+✔ Password … 
+"password": String must contain at least 1 character(s).
+    Error: build:configure command failed.
+~/workspace$ 
+~/workspace$ 
+~/workspace$ ^[[200~npx eas build:configure~
+npx eas build:configure~bash: npx: command not found
+~/workspace$ npx eas build:configure
+An Expo user account is required to proceed.
+
+Log in to EAS with email or username (exit and run eas login --help to see other login options)
+✔ Email or username … manikaran2007@gmail.com
+✔ Password … ***********
+Found eas-cli in your project dependencies.
+It's recommended to use the "cli.version" field in eas.json to enforce the eas-cli version for your project.
+Learn more: https://github.com/expo/eas-cli#enforcing-eas-cli-version-for-your-project
+
+💡 The following process will configure your iOS and/or Android project to be compatible with EAS Build. These changes only apply to your local project files and you can safely revert them at any time.
+
+✔ Which platforms would you like to configure for EAS Build? › Android
+
+🎉 Your project is ready to build.
+
+- Run eas build when you are ready to create your first build.
+- Once the build is completed, run eas submit to upload the app to app stores.
+- Learn more about other capabilities of EAS Build: https://docs.expo.dev/build/introduction
+~/workspace$ npx expo prebuild
+✔ Created native directories | reusing /android, /ios
+› Using current versions instead of recommended expo@~52.0.38.
+✔ Updated package.json | no changes
+✔ Finished prebuild
+~/workspace$ npx eas build --platform android
+Found eas-cli in your project dependencies.
+It's recommended to use the "cli.version" field in eas.json to enforce the eas-cli version for your project.
+Learn more: https://github.com/expo/eas-cli#enforcing-eas-cli-version-for-your-project
+
+Resolved "production" environment for the build. Learn more: https://docs.expo.dev/eas/environment-variables/#setting-the-environment-for-your-builds
+No environment variables with visibility "Plain text" and "Sensitive" found for the "production" environment on EAS.
+
+Specified value for "android.package" in app.json is ignored because an android directory was detected in the project.
+EAS Build will use the value found in the native code.
+✔ Incremented versionCode from 17 to 18.
+✔ Using remote Android credentials (Expo server)
+✔ Using Keystore from configuration: Build Credentials XJreb-qGMy (default)
+
+Compressing project files and uploading to EAS Build. Learn more: https://expo.fyi/eas-build-archive
+✔ Compressed project files 2s (1.8 MB)
+✔ Uploaded to EAS 
+⌛️ Computing the project fingerprint is taking longer than expected...
+⏩ To skip this step, set the environment variable: EAS_SKIP_AUTO_FINGERPRINT=1
+✔ Computed project fingerprint
+
+Build details: https://expo.dev/accounts/manikaran2007/projects/connect4v/builds/fe83cd9e-e644-445c-98e0-c9a24c2fc337
+
+Waiting for build to complete. You can press Ctrl+C to exit.
+  Build queued...
+
+Start builds sooner in the priority queue.
+Sign up for EAS Production or Enterprise at https://expo.dev/accounts/manikaran2007/settings/billing
+
+Waiting in Free tier queue
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 
+
+✖ Build failed
+🤖 Android build failed:
+Gradle build failed with unknown error. See logs for the "Run gradlew" (https://expo.dev/accounts/manikaran2007/projects/connect4v/builds/fe83cd9e-e644-445c-98e0-c9a24c2fc337#run-gradlew) phase for more information.
+~/workspace$ 
